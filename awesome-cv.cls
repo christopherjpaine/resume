@@ -109,7 +109,7 @@
 
 %% Header & Footer
 % Set offset to each header and footer
-\fancyhfoffset{0em}
+\fancyhfoffset{0mm}
 % Remove head rule
 \renewcommand{\headrulewidth}{0pt}
 % Clear all header & footer fields
@@ -748,7 +748,6 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -756,7 +755,6 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
 }
 
 
