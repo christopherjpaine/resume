@@ -1,0 +1,154 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,noedge,left]{./examples/profile}
+\name{Christopher}{Paine}
+\position{Senior Embedded Software Engineer}
+\address{London}
+
+\mobile{+447825663060}
+\email{christopherjpaine@gmail.com}
+% \dateofbirth{January 1st, 1970}
+% \homepage{www.posquit0.com}
+\github{christopherjpaine}
+\linkedin{christopherjpaine}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Bragi}
+  {Bragi GmbH\\Sendlingerstraße 7\\80331 Munich}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Embedded Firmware Engineer}
+% How the letter is opened
+\letteropening{Dear Sir/Madam,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Claud D. Park~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I’ve recently returned from a three-month career break spent travelling, and I’m now looking for a fresh challenge that allows me to grow both personally and professionally. I’m based in London but open to relocating to find that opportunity, and I’m eager to join a team where I can deepen my expertise, work on new platforms, and make strong technical contributions.
+
+I bring a solid foundation in embedded development, built across several industries, and I thrive in collaborative environments. I’ve often been recognised for bringing energy to teams, helping others feel included, and supporting junior engineers through informal mentorship.
+
+Outside of work, I’m passionate about music and audio technology, enjoy woodworking and hands-on projects, and find balance through time outdoors; whether that’s cycling, skiing or hiking.
+
+\lettersection{Why Bragi?}
+I came across Bragi while looking for roles in embedded audio and was immediately interested in the concept of next-generation audio wearables. I believe the company’s current position (having pioneered wireless earbuds and now leading in AI-powered platforms) aligns well with my desire to deepen my existing skills and take on new challenges with emerging technology.
+
+From the job description, it’s clear that the team is focused on building a smart, reliable, and flexible platform that delivers real value to customers, and I’m eager to contribute to projects like this. 
+I can see that achieving this will involve close collaboration across functions and a strong focus on testing infrastructure, both of which align closely with what I’m looking for in my next role.
+
+\lettersection{Why Me?}
+
+My extensive experience as embedded software engineer across multiple industries and my particular speciality in audio technology, makes me a great candidate for the role. 
+With a strong foundation in low-level C and electronics, I’m very comfortable reading datasheets, implementing drivers and working with laboratory equipment. I am also capable of architecting embedded solutions at a higher-level in an RTOS context allowing me to contribute meaningfully to platform design when necessary.
+In all of my roles I have been an active participant in developing agile ways-of-working and feel very comfortable working in a Kanban style team.
+
+I would be very excited to work on a bluetooth enabled product, in my role at Sportable I worked extensively with a complex wireless communication protocol and I beleive this experience would transfer well.
+% I have found myself both enjoying and succeeding when working across functions, most recently at podpoint, working with backend, frontend and customer service teams to resolve live issues during our product launch.
+During the launch of our product at podpoint I spent considerable time working with frontend, backend and customer-service teams to resolve live issues. This experience would provide a great basis to work closely with mobile developers.
+During my time at sportable I gained invaluable insight into production processes as we scaled up our product, taking a lead role in developing modular production tests that were deployed to across several stages of production.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}

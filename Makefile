@@ -5,7 +5,7 @@ cv.pdf: cv/cv.tex $(CV_SRCS)
 	$(CC) -output-directory=cv $<
 
 coverletter.pdf: coverletter/coverletter.tex
-	$(CC) -output-directory= $<
+	$(CC) -output-directory=coverletter $<
 
 clean:
 	rm -rf /*.pdf
